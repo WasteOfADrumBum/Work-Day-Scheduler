@@ -1,0 +1,256 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background-color: silver;
+  /* https://codingwiki.fandom.com/wiki/CSS_Patterns */
+  background-image: radial-gradient(
+      circle at 100% 150%,
+      silver 24%,
+      white 24%,
+      white 28%,
+      silver 28%,
+      silver 36%,
+      white 36%,
+      white 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 150%,
+      silver 24%,
+      white 24%,
+      white 28%,
+      silver 28%,
+      silver 36%,
+      white 36%,
+      white 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      white 10%,
+      silver 10%,
+      silver 23%,
+      white 23%,
+      white 30%,
+      silver 30%,
+      silver 43%,
+      white 43%,
+      white 50%,
+      silver 50%,
+      silver 63%,
+      white 63%,
+      white 71%,
+      transparent 71%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      white 5%,
+      silver 5%,
+      silver 15%,
+      white 15%,
+      white 20%,
+      silver 20%,
+      silver 29%,
+      white 29%,
+      white 34%,
+      silver 34%,
+      silver 44%,
+      white 44%,
+      white 49%,
+      transparent 49%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 50%,
+      white 5%,
+      silver 5%,
+      silver 15%,
+      white 15%,
+      white 20%,
+      silver 20%,
+      silver 29%,
+      white 29%,
+      white 34%,
+      silver 34%,
+      silver 44%,
+      white 44%,
+      white 49%,
+      transparent 49%,
+      transparent
+    );
+  background-size: 100px 50px;
+  /* move footer down to show full page */
+  padding-bottom: 180px;
+}
+
+textarea {
+  background: transparent;
+  border: solid 1px lightgrey;
+  resize: none;
+  color: #000000;
+  padding: 10px;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  margin: 0px;
+}
+
+td.textArea {
+  padding: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 75px;
+  padding: 10px 10px 20px 10px;
+  color: white;
+  /* https://css-tricks.com/examples/TextStroke/ */
+  text-shadow: -3px -3px 0 #000, 1px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+  font-family: Anime;
+}
+
+.lead {
+  color: whitesmoke;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: grey;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid white;
+  box-shadow: 0 20px 20px -20px #333;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+f .time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
+/* tr replaces row */
+tr {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+  width: -webkit-fill-available;
+}
+
+/* .row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+} */
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  border: 1px solid #d3d3d3;
+  color: grey;
+  text-decoration: line-through;
+}
+
+.present {
+  background-color: #b1b1b1;
+  border: 3px solid #ff6961;
+  color: #2c2c2c;
+  font-weight: bold;
+}
+
+.future {
+  background-color: #b1b1b1;
+  border: 3px solid #77dd77;
+  color: whitesmoke;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: grey;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container-master-buttons {
+  text-align: center;
+  font-size: 20px;
+}
+
+.saveallbtn,
+.clearallbtn {
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 20px;
+  background-color: grey;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* || FOOTER || */
+
+footer {
+  padding: 15px 0;
+  margin-top: 150px;
+  /* Keeps Footer at the bottom of the page */
+  clear: both;
+  color: #ccc;
+  /* Center footer content */
+  text-align: center;
+  background: #666;
+  border-top: 8px solid white;
+  box-shadow: 0 20px 20px 20px #333;
+  width: 100%;
+  height: auto;
+  line-height: 5px;
+  bottom: 0;
+  position: fixed;
+  /* Prevents contact infor from word-wrapping on small screens */
+  white-space: nowrap;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:visited {
+  color: lightgrey;
+}
+
+footer a:hover {
+  color: darkgrey;
+  text-decoration: none;
+}
+
+.contact {
+  /* button and text size */
+  margin-top: 7px;
+  font-variant: small-caps;
+}
+
+.btn-phone,
+.btn-email,
+.btn-blog {
+  font-size: 15px;
+}
+
+.copyright {
+  margin-top: 14px;
+  font-size: 12px;
+}

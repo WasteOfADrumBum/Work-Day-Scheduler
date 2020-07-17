@@ -1,0 +1,135 @@
+<!-- 
+
+    Made a table using JavaScript & JQuery 
+    This is what the result looks like in HTML once it's created
+
+ -->
+
+<div class="container time-block">
+  <table class="table">
+    <tbody id="myPlanner">
+      <tr>
+        <td class="hour">08:00</td>
+        <td class="textArea">
+          <textarea class="description future" data-time="08:00"></textarea>
+        </td>
+        <td class="saveBtn"><i class="far fa-save fa-2x"></i></td>
+      </tr>
+      <tr>
+        <td class="hour">09:00</td>
+        <td class="textArea">
+          <textarea class="description future" data-time="09:00"></textarea>
+        </td>
+        <td class="saveBtn"><i class="far fa-save fa-2x"></i></td>
+      </tr>
+      <tr>
+        <td class="hour">10:00</td>
+        <td class="textArea">
+          <textarea class="description future" data-time="10:00"></textarea>
+        </td>
+        <td class="saveBtn"><i class="far fa-save fa-2x"></i></td>
+      </tr>
+      <tr>
+        <td class="hour">11:00</td>
+        <td class="textArea">
+          <textarea class="description future" data-time="11:00"></textarea>
+        </td>
+        <td class="saveBtn"><i class="far fa-save fa-2x"></i></td>
+      </tr>
+      <tr>
+        <td class="hour">12:00</td>
+        <td class="textArea">
+          <textarea class="description future" data-time="12:00"></textarea>
+        </td>
+        <td class="saveBtn"><i class="far fa-save fa-2x"></i></td>
+      </tr>
+      <tr>
+        <td class="hour">13:00</td>
+        <td class="textArea">
+          <textarea class="description future" data-time="13:00"></textarea>
+        </td>
+        <td class="saveBtn"><i class="far fa-save fa-2x"></i></td>
+      </tr>
+      <tr>
+        <td class="hour">14:00</td>
+        <td class="textArea">
+          <textarea class="description future" data-time="14:00"></textarea>
+        </td>
+        <td class="saveBtn"><i class="far fa-save fa-2x"></i></td>
+      </tr>
+      <tr>
+        <td class="hour">15:00</td>
+        <td class="textArea">
+          <textarea class="description future" data-time="15:00"></textarea>
+        </td>
+        <td class="saveBtn"><i class="far fa-save fa-2x"></i></td>
+      </tr>
+      <tr>
+        <td class="hour">16:00</td>
+        <td class="textArea">
+          <textarea class="description future" data-time="16:00"></textarea>
+        </td>
+        <td class="saveBtn"><i class="far fa-save fa-2x"></i></td>
+      </tr>
+      <tr>
+        <td class="hour">17:00</td>
+        <td class="textArea">
+          <textarea class="description future" data-time="17:00"></textarea>
+        </td>
+        <td class="saveBtn"><i class="far fa-save fa-2x"></i></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 
+
+    Created a container <div class="container time-block"></div>
+    Inside that container I made a table  <table class="table"></table>
+    Grouped the body content in an HTML table <tbody id="myPlanner"></tbody>
+    I then populated sections sorted by Time Text and Icons
+
+    <tr>
+        <td class="hour">17:00</td> // Time
+        <td class="textArea"> // Text
+          <textarea class="description future" data-time="17:00"></textarea>
+        </td>
+        <td class="saveBtn"><i class="far fa-save fa-2x"></i></td> // Icon
+    </tr>
+
+    Cretated a function to listen for the clicking of the td class="saveBtn"
+
+    // listen for save button clicks
+    $(".saveBtn").on("click", function () {
+        // get nearby values
+        var time = $(this).parent().find(".description").attr("data-time");
+        var text = $(this).parent().find(".description").val();
+        planner[time] = text;
+        // save the value in localStorage as time
+        localStorage.setItem("planner", JSON.stringify(planner));
+    });
+
+    Created a button tied to a onclick function
+
+    <button class="button saveallbtn" onclick="clickAll()">
+        <i class="fa fa-floppy-o" aria-hidden="true"></i> Save All
+    </button>
+
+    Created a function with the intent of finding and clicking all <td></td> elements with the class="saveBtn"
+
+    function clickAll() {
+
+        // find all saveBtn's (This works up till this point)
+        var allButtons = document.querySelectorAll("td[class^=saveBtn]");
+
+        // Finds all 10 <td> elements containing the class saveBtn
+        console.log (allButtons.length)
+
+        // Need this to click all saveBtn's (This Doesn't Work)
+        for (var i = 0; i < allButtons.length; i++) {
+            allButtons[i].addEventListener("click", function () {});
+        }
+
+    }
+
+ -->

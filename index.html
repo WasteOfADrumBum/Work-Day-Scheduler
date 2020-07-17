@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- || METADATA || -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- || STYLESHEETS || -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Page Title -->
+    <title>Work Day Scheduler</title>
+
+    <!-- Coding HTML/CSS framwork: UNC Coding BootCamp -->
+    <!-- Additioanl HTML/CSS/JS Coding and functionality: Joshua M. Small -->
+  </head>
+
+  <body>
+    <!-- || HEADER || -->
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+    <!-- || TIMEBLOCKS || -->
+    <!-- added time-block to container for table conversion -->
+    <div class="container time-block">
+      <table class="table">
+        <tbody id="myPlanner"></tbody>
+      </table>
+    </div>
+
+    <!-- || MASTER BUTTONS || -->
+    <div class="container-master-buttons">
+      <button class="button saveallbtn" onclick="clickAll()">
+        <i class="fa fa-floppy-o" aria-hidden="true"></i> Save All
+      </button>
+      <button class="button clearallbtn" onclick="clearAll()">
+        <i class="fa fa-trash-o" aria-hidden="true"></i> Clear All
+      </button>
+    </div>
+
+    <!-- || JAVASCRIPT || -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/moment-with-locales.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+
+  <!-- || FOOTER || -->
+  <footer>
+    <div class="contact">
+      <!--Phone-->
+      <a
+        href="tel:828-333-8983"
+        class="btn-floating btn-lg btn-phone"
+        type="button"
+        role="button"
+      >
+        <i class="fas fa-phone"></i> 828.333.8983</a
+      >
+      |
+      <!--Email-->
+      <a
+        href="mailto:some@email.com"
+        class="btn-floating btn-lg btn-email"
+        type="button"
+        role="button"
+      >
+        <i class="fas fa-envelope"></i> JMSmall89@gmail.com</a
+      >
+      |
+      <!--Blog-->
+      <a
+        href="https://object-grind.blogspot.com/"
+        target="_blank"
+        class="btn-floating btn-lg btn-blog"
+        type="button"
+        role="button"
+      >
+        <i class="fas fa-motorcycle"></i> Object Grind</a
+      >
+    </div>
+
+    <div class="socialmedialinks">
+      <!--Facebook-->
+      <a
+        href="https://www.facebook.com/WasteOfADrumBum/"
+        target="_blank"
+        class="btn-floating btn-lg btn-facebook"
+        type="button"
+        role="button"
+      >
+        <i class="fa fa-facebook-square" aria-hidden="true"></i
+      ></a>
+      <!--Instagram-->
+      <a
+        href="https://www.instagram.com/lost.between.thoughts/?hl=en"
+        target="_blank"
+        class="btn-floating btn-lg btn-instagram"
+        type="button"
+        role="button"
+      >
+        <i class="fa fa-instagram" aria-hidden="true"></i
+      ></a>
+      <!--Snapchat-->
+      <a
+        href="https://www.snapchat.com/add/wasteofadrumbum"
+        target="_blank"
+        class="btn-floating btn-lg btn-snapchat"
+        type="button"
+        role="button"
+      >
+        <i class="fa fa-snapchat-square" aria-hidden="true"></i
+      ></a>
+      <!--Steam-->
+      <a
+        href="https://steamcommunity.com/id/wasteofadrumbum/"
+        target="_blank"
+        class="btn-floating btn-lg btn-steam"
+        type="button"
+        role="button"
+      >
+        <i class="fa fa-steam-square" aria-hidden="true"></i
+      ></a>
+      <!--Soundcloud-->
+      <a
+        href="https://soundcloud.com/wasteofadrumbum"
+        target="_blank"
+        class="btn-floating btn-lg btn-soundcloud"
+        type="button"
+        role="button"
+      >
+        <i class="fa fa-soundcloud" aria-hidden="true"></i
+      ></a>
+      <!--LinkedIn-->
+      <a
+        href="https://www.linkedin.com/in/joshuamsmall/"
+        target="_blank"
+        class="btn-floating btn-lg btn-linkedin"
+        type="button"
+        role="button"
+      >
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i
+      ></a>
+      <!--Stack Overflow-->
+      <a
+        href="https://stackoverflow.com/users/13681415/wasteofadrumbum"
+        target="_blank"
+        class="btn-floating btn-lg btn-stack-overflow"
+        type="button"
+        role="button"
+      >
+        <i class="fa fa-stack-overflow" aria-hidden="true"></i
+      ></a>
+      <!--GitHub-->
+      <a
+        href="https://github.com/WasteOfADrumBum"
+        target="_blank"
+        class="btn-floating btn-lg btn-github"
+        type="button"
+        role="button"
+      >
+        <i class="fa fa-github-square" aria-hidden="true"></i
+      ></a>
+    </div>
+
+    <div class="copyright">
+      Copyright &copy; 2020 Joshua M. Small
+    </div>
+  </footer>
+</html>
