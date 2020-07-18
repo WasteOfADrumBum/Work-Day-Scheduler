@@ -157,6 +157,8 @@ tr {
   color: #000000;
   border-top: 1px solid #000000;
   max-width: 25px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .past {
