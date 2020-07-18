@@ -35,7 +35,7 @@ $(document).ready(function () {
       currentHour = "past";
     }
 
-    // text area
+    // text area classes/attributes
     var eventText = $("<textarea>")
       .addClass("description")
       .addClass(currentHour)

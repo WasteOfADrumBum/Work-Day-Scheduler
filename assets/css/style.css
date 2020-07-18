@@ -155,7 +155,8 @@ tr {
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px solid #000000;
+  max-width: 25px;
 }
 
 .past {
@@ -184,6 +185,8 @@ tr {
   border-bottom-right-radius: 15px;
   background-color: grey;
   color: white;
+  font-size: 25px;
+  max-width: 25px;
 }
 
 .saveBtn i:hover {
