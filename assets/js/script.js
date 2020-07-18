@@ -83,31 +83,9 @@ $(document).ready(function () {
 });
 
 // save all
-function clickAll() {
-  // find all saveBtn's © Takit Isy
-  var allButtons = document.querySelectorAll("td[class^=saveBtn]");
-  // log all saveBtn's Found
-  console.clear();
-  console.log(
-    "Found",
-    allButtons.length,
-    "td which class starts with “saveBtn”."
-  );
-
-  // This only logs button clicks after saveallbtn is clicked...
-  // Need this to click all saveBtn's
-  /* for (var i = 0; i < allButtons.length; i++) {
-    allButtons[i].addEventListener("click", function () {
-      console.log("You clicked:", this.innerHTML);
-    });
-  } */
-
-  // This does the same thing as above © Jonny Reeves (https://jonnyreeves.co.uk/2012/jquery-a-single-click-handler-for-multiple-buttons/)
-  /* $("#myPlanner").on("click", ".saveBtn", function (event) {
-    var button = $(event.target);
-    console.log("Clicked", button);
-  });*/
-}
+$(".saveallbtn").on("click", function () {
+  $(".saveBtn").click();
+});
 
 // clear all
 function clearAll() {
