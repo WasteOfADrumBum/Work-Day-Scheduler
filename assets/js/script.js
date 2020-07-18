@@ -84,6 +84,8 @@ $(document).ready(function () {
 
 // save all
 $(".saveallbtn").on("click", function () {
+  // $(".saveallbtn") selects the button class="saveallbtn"
+  // on saveallbtn click select all classes names saveBtn and click
   $(".saveBtn").click();
 });
 
