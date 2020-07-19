@@ -74,19 +74,34 @@ $(document).ready(function () {
     var text = $(this).parent().find(".description").val();
     // consol log time and text value
     console.clear();
-    console.log(time, text);
+    console.log("Time: ", time, "Text: ", text);
 
     planner[time] = text;
     // save the value in localStorage as time
+    // Creates and array (planner)
     localStorage.setItem("planner", JSON.stringify(planner));
+    console.log(planner);
   });
 });
 
 // save all
+// $(".saveallbtn") selects the button class="saveallbtn"
 $(".saveallbtn").on("click", function () {
-  // $(".saveallbtn") selects the button class="saveallbtn"
-  // on saveallbtn click select all classes names saveBtn and click
-  $(".saveBtn").click();
+  // $(".saveBtn").click(); -> not proper coding
+  // set all icons color after save
+  $(".saveBtn").css("color", "lightgrey");
+  // get all values
+  var allSaveBtns = $(".saveBtn");
+  console.clear();
+  console.log(allSaveBtns);
+  $.each(allSaveBtns, function (i, btn) {
+    var time = $(btn).parent().find(".description").attr("data-time");
+    var text = $(btn).parent().find(".description").val();
+    console.log("Time: ", time, "Text: ", text);
+  });
+  planner[time] = text;
+  localStorage.setItem("planner", JSON.stringify(planner));
+  console.log(planner);
 });
 
 // clear all
