@@ -44,5 +44,7 @@ https://wasteofadrumbum.github.io/Work-Day-Scheduler/
 * The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 https://github.com/WasteOfADrumBum/Work-Day-Scheduler
 
+![day planner gif demo](https://github.com/WasteOfADrumBum/Work-Day-Scheduler/blob/master/assets/images/workdayscheduler.gif?raw=true)
+
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
