@@ -83,8 +83,6 @@ body {
 			transparent
 		);
 	background-size: 100px 50px;
-	/* move footer down to show full page */
-	padding-bottom: 180px;
 }
 
 textarea {
@@ -216,9 +214,7 @@ tr {
 
 footer {
 	padding: 15px 0;
-	margin-top: 150px;
-	/* Keeps Footer at the bottom of the page */
-	clear: both;
+	margin-top: 30px;
 	color: #ccc;
 	/* Center footer content */
 	text-align: center;
@@ -228,8 +224,6 @@ footer {
 	width: 100%;
 	height: auto;
 	line-height: 5px;
-	bottom: 0;
-	position: fixed;
 	/* Prevents contact infor from word-wrapping on small screens */
 	white-space: nowrap;
 }
