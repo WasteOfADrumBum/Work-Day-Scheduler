@@ -157,7 +157,6 @@ tr {
 	color: #000000;
 	border-top: 1px solid #000000;
 	max-width: 25px;
-	min-width: 48px;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
@@ -190,7 +189,6 @@ tr {
 	color: white;
 	font-size: 25px;
 	max-width: 25px;
-	min-width: 48px;
 }
 
 .saveBtn i:hover {
@@ -278,10 +276,18 @@ footer a:hover {
 	.btn-lg {
 		padding: 3.5px !important;
 		line-height: 1.5;
-		font-size: 12px !important;
+		font-size: 11px !important;
 	}
 	.h1,
 	h1 {
 		font-size: 3.5rem !important;
+		padding: 1px;
+	}
+	.jumbotron {
+		padding: 10px;
+	}
+	.hour,
+	.saveBtn {
+		min-width: 65px;
 	}
 }
