@@ -1,50 +1,86 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# **Third-Party APIs: Work Day Scheduler**
 
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+![GitHub license](https://img.shields.io/badge/Made%20by-%40WasteOfADrumBum-green)
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+## Description
 
-## User Story
+A simple application that allows the user to save events for each hour of the day using dynamically updated HTML and CSS powered by jQuery.
 
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+# Technologies Used
 
-## Acceptance Criteria
+![GitHub top language](https://img.shields.io/github/languages/top/WasteOfADrumBum/Work-Day-Scheduler?color=green&logo=github&logoColor=green)
+![GitHub language count](https://img.shields.io/github/languages/count/WasteOfADrumBum/Work-Day-Scheduler?color=green&logo=github&logoColor=green)
 
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+## Table of contents
 
-The following animation demonstrates the application functionality:
+- [Installation](#installation)
+- [Instructions](#instructions)
+- [Features](#features)
+- [Example Gif](#example-gif)
+- [Repository Link](#Repository)
+- [Test](#Test)
+- [Licence](#Licence)
+- [GitHub Info](#GitHub)
 
-![day planner demo](./assets/images/05-third-party-apis-homework-demo.gif)
+## Installation
 
-## Review
+You'll need to use the Moment.js library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
 
-You are required to submit the following for review:
+## Instructions
 
-* The URL of the deployed application. 
-https://wasteofadrumbum.github.io/Work-Day-Scheduler/
+- The URL of the deployed application.
+  https://wasteofadrumbum.github.io/Work-Day-Scheduler/
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-https://github.com/WasteOfADrumBum/Work-Day-Scheduler
+## Features
 
-![day planner gif demo](https://github.com/WasteOfADrumBum/Work-Day-Scheduler/blob/master/assets/images/workdayscheduler.gif?raw=true)
+- Launch App
+- Current day displayed at top
+- Timeblocks for standard business hours
+- Timeblocks are color coded for past, present and future
+- Can enter events
+- Can save each or all events
+- refesh, load or clear events
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+## Example Gif
+
+<img src="assets\images\workdayscheduler.gif" width="500" />
+
+## Repository
+
+![GitHub repo size](https://img.shields.io/github/repo-size/WasteOfADrumBum/Work-Day-Scheduler?logo=github)
+
+![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/WasteOfADrumBum/Work-Day-Scheduler)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/WasteOfADrumBum/Work-Day-Scheduler)
+
+![GitHubopen pull request](https://img.shields.io/github/issues-pr/WasteOfADrumBum/Work-Day-Scheduler)
+![GitHub closed pull request](https://img.shields.io/github/issues-pr-closed/WasteOfADrumBum/Work-Day-Scheduler)
+
+![GitHub Stars](https://img.shields.io/github/stars/WasteOfADrumBum/Work-Day-Scheduler?style=social)
+
+- [Project Repo](https://github.com/WasteOfADrumBum/Work-Day-Scheduler)
+
+## Contributors
+
+![GitHub contributors](https://img.shields.io/github/contributors/WasteOfADrumBum/Work-Day-Scheduler)
+![GitHub Forks](https://img.shields.io/github/forks/WasteOfADrumBum/Work-Day-Scheduler?label=Fork)
+![GitHub Watchers](https://img.shields.io/github/watchers/WasteOfADrumBum/Work-Day-Scheduler?label=Watch)
+
+## Test
+
+![GitHub test](https://img.shields.io/badge/test-100%25-success)
+
+![GitHub open issues](https://img.shields.io/github/issues/WasteOfADrumBum/Work-Day-Scheduler)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/WasteOfADrumBum/Work-Day-Scheduler)
+
+## Licence
+
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
+## GitHub
+
+<img src="https://avatars0.githubusercontent.com/u/66432859?v=4" width="250" />
+
+- Joshua M. Small
+- [GitHub Profile](https://github.com/WasteOfADrumBum)
+- <JMSmall89@gmail.com>
+- ![GitHub Followers](https://img.shields.io/github/followers/WasteOfADrumBum?label=Follow)
